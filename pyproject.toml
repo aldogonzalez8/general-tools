@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "general-tools"
+version = "0.1.0"
+description = "General tools"
+authors = ["Aldo Gonzalez <aldo.gonzalez@airbyte.io>"]
+[[tool.poetry.packages]]
+include = "general_tools"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fpdf = "^1.7.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+general-tools = "general_tools.run:run"
